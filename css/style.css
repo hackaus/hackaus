@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');/*--- Paragraph Font --*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); /*--- Headings Font --*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #F0F0F0;
+	color: #555;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	line-height: 190%;
+	text-align: center;
+}
+.banner-container {
+	margin: 0;
+}
+
+.banner {
+	margin: 0;
+	height: 20em;
+	background-image: url(/img/banner.jpg);
+	background-size: cover;
+}
+
+h3 {
+	font-size: 190%;
+	padding: 5% 0;
+}
+
+h4 {
+	font-size: 170%;
+	padding: 5% 0;
+}
+
+h5 {
+	font-size: 120%;
+	color:
+}
+
+img {
+	max-width: 100%;
+	margin: 0;
+	background: #F0F0F0;
+
+}
+
+header {
+	background: rgba(0, 0, 0, 0.4);
+	height: 86px;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	opacity: .8;
+}
+
+header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#logo {
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 300%;
+  padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	float: right;
+	padding: 20px 20px 0 0;
+}
+
+#menu-icon {
+	background: url(/img/icon.png) center;
+	width: 40px;
+	height: 34px;
+	display: hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+nav ul li {
+	font-family: sans-serif;
+	display: inline-block;
+	padding: 10px;
+	float: left;
+	font-size: 110%;
+}
+
+nav ul li a {
+	color: #F0F0F0;
+	text-decoration: none;
+	font-weight: 700;
+}
+nav ul li a:hover, .current {
+	border-bottom: 2px solid white;
+	line-height: 5px;
+}
+
+/* ///////////inner wrapper //////////////*/
+#inner-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.one-third {
+	width: 29%;
+	float: left;
+	margin: 2%;
+}
+
+.circle {
+	width: 150px;
+	height: 150px;
+	background: #DD4814;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.one-third i {
+	color: #F0F0F0;
+	font-size: 555%;
+	padding: 20%;
+}
+
+p {
+	font-family: 'Droid Sans', sans-serif;
+	text-align: left;
+	font-size: 125%;
+	padding: 2%;
+}
+
+.clear-fix {
+	clear: both;
+	padding: 2%;
+}
+
+article {
+	float: left;
+	width: 50%;
+	padding: 4%;
+}
+
+aside {
+	float: right;
+	width: 35%;
+	padding: 2%;
+}
+
+aside h3 {
+	text-decoration: underline;
+}
+
+.one-third img {
+	padding-bottom: 2%;
+}
+
+/* submit a hackathon*/
+.submit {
+	text-decoration: none;
+	border-radius: 0.5;
+	padding: 1em;
+	background-color: #DD4814;
+	color: white;
+}
+
+/* / /////////////// upcoming hackathons //////////////////////*/
+.upcoming-inner-wrapper {
+}
+
+.hackathon-title {
+	text-align: left;
+}
+.description {
+	float: left;
+	width: 55%;
+	min-height: 200px;
+}
+.details {
+	float: right;
+	width: 35%;
+	padding: 2%;
+
+}
+.date {
+	text-align: left;
+	font-size: 110%;
+}
+.detail {
+	margin: 0;
+	text-align: left;
+}
+
+.detail i {
+	font-size: 110%;
+}
+.prize {
+	text-align: left;
+}
+
+span.about {
+	font-weight: 700;
+	display: block;
+}
+
+/* /////////////// footer //////////////*/
+footer {
+	background: #333;
+	overflow: hidden;
+	opacity: .9;
+}
+
+#footer-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+footer .one-third {
+	width: 33%;
+	margin: 2% 0;
+}
+
+footer h3 {
+	color: #959595;
+}
+
+footer p {
+	color: #959595;
+	text-align: center;
+}
+
+#footer-third {
+	border-right: 1px solid #959595;
+	max-height: 250px;
+	min-height: 250px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #959595;
+}
+
+.social li {
+	display: inline;
+}
+
+.social i {
+	font-size: 245%;
+	padding: 2% 6%;
+	color: #959595;
+}
+
+.social i:hover {
+	color: #F5F5F5;
+}
+
+.footercontact {
+	text-align: left;
+	font-size: 100%;
+}
+
+#footer-inner h4 {
+	text-align: center;
+	font-size: 180%;
+	color: #959595;
+}
+
+.footercontact i {
+	font-size: 110%;
+	padding: 2% 6%;
+}
+
+.footercontact .fa-mobile {
+	font-size: 200%;
+}
+
+h5 a:hover {
+	text-decoration: none;
+	color: #405580;
+}
+
+
+/* //footer second //*/
+footer.second {
+	border-top: 1px solid #4D4E50;
+	max-height: 50px;
+	opacity: .95;
+	padding-bottom: 1.6%;
+}
+
+/* ///////////// Media query ////////////*/
+/* //////////// mobile nav  ////////////*/
+@media screen and (max-width: 1103px) {
+  #menu-icon {
+    display: inline-block;
+  }
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #6991AC;
+    right: 20px;
+    top: 60px;
+    border: 1px solid #FFF;
+    border-radius: 2px 0 2px 2px;
+    width: 180px;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  nav ul li:hover{
+    cursor: pointer;
+    color: #C3D7DF;
+  }
+  nav li {
+    text-alignt: center;
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+  }
+	.footercontact {
+		text-align: center;
+	}
+	.footercontact i {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	header {
+		position: absolute;
+	}
+	#inner-wrapper {
+		padding: 3%;
+	}
+	.one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.circle {
+		width: 100px;
+		height: 100px;
+	}
+	.one-third i {
+		font-size: 360%;
+	}
+
+	article {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
+	h4 {
+		font-size: 130%;
+	}
+	footer .one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.social i {
+		font-size: 245%;
+	}
+	#footer-third {
+		min-height: 150px;
+		padding-bottom: 10%;
+		border-bottom: 1px solid #959595;
+	}
+	#footer-third-last {
+		margin-bottom: 10%;
+	}
+	.footercontact {
+		text-align: center;
+	}
+
+	.footercontact i {
+		display: none;
+	}
+	.footercontact .fa-mobile {
+		font-size: 200%;
+	}
+}
+
+@media screen and (max-width: 478px) {
+	h3 {
+		font-size: 150%;
+	}
+	p {
+		fonts-size: 100%;
+		margin: 2%;
+	}
+	h4 {
+		font-size: 115%;
+	}
+}
+
+/* //////////////////// map ////////////////////// */
+
+
+.territory{
+    fill: #a9a9a9;
+}
+
+.territory:hover{
+  fill: #22aa44;
+  cursor: pointer;
+}
+.active {
+   fill: #22aa44;
+}
+
+#upcoming {
+	padding: 0;
+}
+
+#click-state {
+	text-align: center;
+}
+
+.upcoming-wrapper {
+  padding: 0 2em;
+  float: right;
+  width: 60%;
+}
+
+#aus {
+  float: left;
+  width: 40%;
+}
+
+.bris, .syd, .melb, .adel, .perth {
+  float: right;
+  width: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 786px) {
+  #aus, .upcoming-wrapper {
+    width: 100%;
+    padding: 0 3em;
+  }
+  .bris, .syd, .melb, .adel, .perth {
+   display: none;
+ }
+}
