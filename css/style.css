@@ -148,37 +148,52 @@ p {
 }
 
 article {
-	float: left;
+	display: inline-block;
 	width: 50%;
 	padding: 4%;
+	vertical-align: top;
 }
 
 aside {
-	float: right;
-	width: 35%;
+	display: inline-block;
+	width: 40%;
 	padding: 2%;
+	vertical-align: top;
 }
 
-aside h3 {
-	text-decoration: underline;
+aside p {
+	text-align: center;
 }
+
 
 .one-third img {
 	padding-bottom: 2%;
 }
 
 /* submit a hackathon*/
-.submit {
+a.submit {
 	text-decoration: none;
-	border-radius: 0.5;
+	border-radius: 3px;
 	padding: 1em;
+	margin: 1em;
 	background-color: #DD4814;
 	color: white;
+	width: 160px;
+}
+
+.buttons li {
+	display: inline;
+}
+
+.submit:hover {
+	background-color: rgb(43, 104, 156);
+}
+
+.button-wrapper {
+	margin-top: 2em;
 }
 
 /* / /////////////// upcoming hackathons //////////////////////*/
-.upcoming-inner-wrapper {
-}
 
 .hackathon-title {
 	text-align: left;
@@ -192,7 +207,6 @@ aside h3 {
 	float: right;
 	width: 35%;
 	padding: 2%;
-
 }
 .date {
 	text-align: left;
@@ -205,9 +219,7 @@ aside h3 {
 
 .detail i {
 	font-size: 110%;
-}
-.prize {
-	text-align: left;
+	color: rgb(162, 162, 162);
 }
 
 span.about {
@@ -267,7 +279,6 @@ footer a {
 }
 
 .footercontact {
-	text-align: left;
 	font-size: 100%;
 }
 
@@ -297,11 +308,36 @@ footer.second {
 	border-top: 1px solid #4D4E50;
 	max-height: 50px;
 	opacity: .95;
-	padding-bottom: 1.6%;
+	/*padding-bottom: 1.6%;*/
+}
+.second p {
+	padding: 1%;
 }
 
 /* ///////////// Media query ////////////*/
 /* //////////// mobile nav  ////////////*/
+
+@media screen and (max-width: 1180px) {
+	aside {
+		width: 100%;
+		padding: 1%;
+	}
+	aside h3 {
+		padding: 0;
+	}
+	aside h4 {
+		padding: 2%;
+	}
+	aside p {
+		padding: 1%;
+	}
+
+	aside .submit {
+		margin: 0.5em;
+	}
+
+}
+
 @media screen and (max-width: 1103px) {
   #menu-icon {
     display: inline-block;
@@ -311,12 +347,12 @@ footer.second {
     z-index: 1000;
     position: absolute;
     padding: 20px;
-    background: #6991AC;
+    background: rgba(0, 0, 0, 0.8);
     right: 20px;
     top: 60px;
     border: 1px solid #FFF;
     border-radius: 2px 0 2px 2px;
-    width: 180px;
+    width: 250px;
   }
   nav:hover ul {
     display: block;
@@ -399,10 +435,11 @@ footer.second {
 	}
 }
 
+
+
 @media screen and (max-width: 610px) {
 	.details {
 		width: 100%;
-
 	}
 	.description {
 		width: 100%;
@@ -414,19 +451,33 @@ footer.second {
 		font-size: 150%;
 	}
 	p {
-		fonts-size: 100%;
+		font-size: 100%;
 		margin: 2%;
 	}
 	h4 {
 		font-size: 115%;
 	}
+	.hackathon-title {
+		font-size: 145%;
+	}
+	.button-wrapper {
+		width: 100%;
+	}
+	.buttons {
+		width: 100%;
+	}
+	.buttons li a {
+		display: block;
+		margin: 1.3em auto;
+		width: 200px;
+		text-align: center;
+	}
 }
 
 /* //////////////////// map ////////////////////// */
 
-
 .territory{
-    fill: #a9a9a9;
+  fill: #a9a9a9;
 }
 
 .territory:hover{
@@ -434,7 +485,7 @@ footer.second {
   cursor: pointer;
 }
 .active {
-   fill: #22aa44;
+  fill: #22aa44;
 }
 
 #upcoming {
@@ -456,7 +507,7 @@ footer.second {
   width: 40%;
 }
 
-.bris, .syd, .melb, .adel, .perth {
+.bris, .melb, .adel, .perth {
   float: right;
   width: 100%;
   display: none;
@@ -467,7 +518,7 @@ footer.second {
     width: 100%;
     padding: 0 3em;
   }
-  .bris, .syd, .melb, .adel, .perth {
+  .bris, .melb, .adel, .perth {
    display: none;
  }
 }
