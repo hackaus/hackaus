@@ -24,7 +24,7 @@ body {
 .banner {
 	margin: 0;
 	height: 20em;
-	background-image: url(/img/banner.jpg);
+	background-image: url(../img/banner.jpg);
 	background-size: cover;
 }
 
@@ -399,6 +399,16 @@ footer.second {
 	}
 }
 
+@media screen and (max-width: 610px) {
+	.details {
+		width: 100%;
+
+	}
+	.description {
+		width: 100%;
+		font-size: 110%;
+	}
+}
 @media screen and (max-width: 478px) {
 	h3 {
 		font-size: 150%;
