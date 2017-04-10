@@ -522,3 +522,41 @@ footer.second {
    display: none;
  }
 }
+
+/* /////////////// subscription /////////////*/
+.webform-outer-wrapper {
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 2em;
+	border: 1px solid black;
+}
+.webform-inner-wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+.webform-inner-wrapper p {
+	font-size: 13.5px;
+}
+
+input.wfe_button {
+	padding: 1em;
+	font-size: 13px;
+	border-raidus: 20px;
+	cursor: pointer;
+	width: 100%;
+	background-color: #DD4814;
+	color: white;
+}
+
+input.wfe_button:hover {
+	background-color: rgb(43, 104, 156);
+	color: white;
+}
+
+input#em_wfs_formfield_3538993, input#em_wfs_formfield_3538994 {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 1em;
+	padding: 1em;
+	font-size: 100%;
+}
