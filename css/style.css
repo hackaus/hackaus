@@ -446,33 +446,7 @@ footer.second {
 		font-size: 110%;
 	}
 }
-@media screen and (max-width: 478px) {
-	h3 {
-		font-size: 150%;
-	}
-	p {
-		font-size: 100%;
-		margin: 2%;
-	}
-	h4 {
-		font-size: 115%;
-	}
-	.hackathon-title {
-		font-size: 145%;
-	}
-	.button-wrapper {
-		width: 100%;
-	}
-	.buttons {
-		width: 100%;
-	}
-	.buttons li a {
-		display: block;
-		margin: 1.3em auto;
-		width: 200px;
-		text-align: center;
-	}
-}
+
 
 /* //////////////////// map ////////////////////// */
 
@@ -488,7 +462,7 @@ footer.second {
   fill: #22aa44;
 }
 
-#upcoming {
+#participate {
 	padding: 0;
 }
 
@@ -584,4 +558,39 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 
 .role {
 	padding: 5px 0 20px 0;
+}
+
+@media screen and (max-width: 478px) {
+	h3 {
+		font-size: 150%;
+	}
+	p {
+		font-size: 100%;
+		margin: 2%;
+	}
+	h4 {
+		font-size: 115%;
+	}
+	.hackathon-title {
+		font-size: 145%;
+	}
+	.button-wrapper {
+		width: 100%;
+	}
+	.buttons {
+		width: 100%;
+	}
+	.buttons li a {
+		display: block;
+		margin: 1.3em auto;
+		width: 200px;
+		text-align: center;
+	}
+	.webform {
+		padding: 1em;
+	}
+	.webform-outer-wrapper {
+		border: none;
+	}
+
 }
