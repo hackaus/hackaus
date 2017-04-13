@@ -9,8 +9,18 @@ $(document).ready(function() {
   // });
 
   //map
-  $("#NSW").addClass('active');
+  $('a[href*="#"]:not([href="#"])').click(function() {
+  event.preventDefault();
 
+  $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top -34
+  }, 1000);
+});
+
+//////////////////////////////////////
+/////   current hackathoons   ///////
+////////////////////////////////////
+  $("#NSW").addClass('active');
   $( "#QLD" ).on("click", function() {
     $(this).addClass('active').siblings().removeClass('active');
     $('.bris').show().siblings().hide('bris');
@@ -21,14 +31,55 @@ $(document).ready(function() {
   });
   $( "#VIC" ).on("click", function() {
     $(this).addClass('active').siblings().removeClass('active')
-    $('.melb').show().siblings().hide('melb');;
+    $('.melb').show().siblings().hide('melb');
   });
   $( "#SA" ).on("click", function() {
     $(this).addClass('active').siblings().removeClass('active')
-    $('.adel').show().siblings().hide('adel');;
+    $('.adel').show().siblings().hide('adel');
   });
   $( "#WA" ).on("click", function() {
     $(this).addClass('active').siblings().removeClass('active')
-    $('.perth').show().siblings().hide('perth');;
+    $('.perth').show().siblings().hide('perth');
   });
+  $( "#NT" ).on("click", function() {
+    $(this).addClass('active').siblings().removeClass('active')
+    $('.darwin').show().siblings().hide('darwin');
+  });
+  $( "#TAS" ).on("click", function() {
+    $(this).addClass('active').siblings().removeClass('active')
+    $('.hobart').show().siblings().hide('hobart');
+  });
+
+  //////////////////////////////////////
+  /////    past hackathoons     ///////
+  ////////////////////////////////////
+
+  $( "#QLD_past" ).on("click", function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.bris_p').show().siblings().hide('bris_p');
+  });
+  $( "#NSW_past" ).on("click", function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.syd_p').show().siblings().hide('syd_p');
+  });
+  $( "#VIC_past" ).on("click", function() {
+    $(this).addClass('active').siblings().removeClass('active')
+    $('.melb_p').show().siblings().hide('melb_p');
+  });
+  // $( "#SA2_past" ).on("click", function() {
+  //   $(this).addClass('active').siblings().removeClass('active')
+  //   $('.adel_p').show().siblings().hide('adel_p');
+  // });
+  // $( "#WA2_past" ).on("click", function() {
+  //   $(this).addClass('active').siblings().removeClass('active')
+  //   $('.perth_p').show().siblings().hide('perth_p');
+  // });
+  // $( "#NT2_past" ).on("click", function() {
+  //   $(this).addClass('active').siblings().removeClass('active')
+  //   $('.darwin_p').show().siblings().hide('darwin_p');
+  // });
+  // $( "#TAS_past" ).on("click", function() {
+  //   $(this).addClass('active').siblings().removeClass('active')
+  //   $('.hobart_p').show().siblings().hide('hobart_p');
+  // });
 });

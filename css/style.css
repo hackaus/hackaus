@@ -30,6 +30,10 @@ body {
 
 h3 {
 	font-size: 190%;
+	padding: 0;
+}
+
+.one-third h3 {
 	padding: 5% 0;
 }
 
@@ -82,7 +86,7 @@ nav {
 }
 
 #menu-icon {
-	background: url(/img/icon.png) center;
+	background: url(../img/icon.png) center;
 	width: 40px;
 	height: 34px;
 	display: hidden;
@@ -111,9 +115,9 @@ nav ul li a:hover, .current {
 }
 
 /* ///////////inner wrapper //////////////*/
-#inner-wrapper {
+.inner-wrapper {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 90px auto;
 }
 
 .one-third {
@@ -384,7 +388,7 @@ footer.second {
 	}
 	.one-third {
 		width: 100%;
-		margin: 0;
+		padding: 5px;
 	}
 	.circle {
 		width: 100px;
@@ -481,8 +485,19 @@ footer.second {
   width: 40%;
 }
 
-.bris, .melb, .adel, .perth {
+.bris, .melb, .adel, .perth, .darwin, .hobart {
   float: right;
+  width: 100%;
+  display: none;
+}
+
+#past #aus {
+	float: right;
+	width: 40%;
+}
+
+.syd_p, .bris_p, .melb_p{
+  float: left;
   width: 100%;
   display: none;
 }
@@ -490,9 +505,9 @@ footer.second {
 @media screen and (max-width: 786px) {
   #aus, .upcoming-wrapper {
     width: 100%;
-    padding: 0 3em;
+    padding: 0 2em;
   }
-  .bris, .melb, .adel, .perth {
+  .bris, .melb, .adel, .perth, .darwin, .hobart {
    display: none;
  }
 }
@@ -566,13 +581,15 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 	}
 	p {
 		font-size: 100%;
-		margin: 2%;
 	}
 	h4 {
 		font-size: 115%;
 	}
 	.hackathon-title {
-		font-size: 145%;
+		font-size: 130%;
+	}
+	#about p {
+		padding: 0 2em;
 	}
 	.button-wrapper {
 		width: 100%;
