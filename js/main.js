@@ -66,15 +66,15 @@ $(document).ready(function() {
     $(this).addClass('active').siblings().removeClass('active')
     $('.melb_p').show().siblings().hide('melb_p');
   });
-  // $( "#SA2_past" ).on("click", function() {
+  // $( "#SA_past" ).on("click", function() {
   //   $(this).addClass('active').siblings().removeClass('active')
   //   $('.adel_p').show().siblings().hide('adel_p');
   // });
-  // $( "#WA2_past" ).on("click", function() {
+  // $( "#WA_past" ).on("click", function() {
   //   $(this).addClass('active').siblings().removeClass('active')
   //   $('.perth_p').show().siblings().hide('perth_p');
   // });
-  // $( "#NT2_past" ).on("click", function() {
+  // $( "#NT_past" ).on("click", function() {
   //   $(this).addClass('active').siblings().removeClass('active')
   //   $('.darwin_p').show().siblings().hide('darwin_p');
   // });
