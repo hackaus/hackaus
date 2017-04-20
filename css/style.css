@@ -39,7 +39,7 @@ h3 {
 
 h4 {
 	font-size: 170%;
-	padding: 5% 0;
+	padding: 3% 0;
 }
 
 h5 {
@@ -148,7 +148,7 @@ p {
 
 .clear-fix {
 	clear: both;
-	padding: 2%;
+	/*padding: 2%;*/
 }
 
 article {
@@ -612,5 +612,5 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 }
 
 .eventbrite {
-	width: 50%;
+	/*width: 50%;*/
 }
