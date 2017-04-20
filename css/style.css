@@ -28,6 +28,10 @@ body {
 	background-size: cover;
 }
 
+a {
+	color: #555;
+}
+
 h3 {
 	font-size: 190%;
 	padding: 0;
@@ -219,6 +223,7 @@ a.submit {
 .detail {
 	margin: 0;
 	text-align: left;
+	padding-left: 2px;
 }
 
 .detail i {
@@ -352,8 +357,8 @@ footer.second {
     position: absolute;
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
-    right: 20px;
-    top: 60px;
+    right: 15px;
+    /*top: 50px;*/
     border: 1px solid #FFF;
     border-radius: 2px 0 2px 2px;
     width: 250px;
@@ -613,4 +618,9 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 
 .eventbrite {
 	/*width: 50%;*/
+}
+
+/*nav*/
+#meetups, #pastanchor {
+	margin: 4em;
 }
