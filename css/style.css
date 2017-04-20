@@ -609,5 +609,8 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 	.webform-outer-wrapper {
 		border: none;
 	}
+}
 
+.eventbrite {
+	width: 50%;
 }
