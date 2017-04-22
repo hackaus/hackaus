@@ -24,7 +24,8 @@
 	<title>Hackathons Australia</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="img/favicon.ico" type="/image/x-icon">
-	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/> -->
+	<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet"/>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </head>
@@ -52,13 +53,18 @@
 		<div class="banner">
 			<h1>Hackathons Australia</h1>
 			<h2>Fast Tracking Australian Innovation</h2>
+			<div class="button-wrapper">
+				<ul class="buttons">
+					<li><a href="#participate" class="submit">Participate in a hackathon near you</a></li>
+				</ul>
+			</div>
+		</div>
 		</div>
 	</div>
 
-	<div class="clear-fix"></div>
 	<br>
 	<div class="inner-wrapper" id="about">
-		<section class="one-third">
+		<!-- <section class="one-third">
 			<div class="circle">
 				<td><i class="fa fa-trophy"></i></td>
 			</div>
@@ -80,7 +86,47 @@
 			</div>
 			<h3>What we do</h3>
 			<p>We are a community group that empowers hackathons to have the right skills, people, partners, education and processes to ensure it is a success. We help organisers with their marketing, let participants know which hackathons are happening, help partners/sponsors to be involved in the innovation ecosystem, and ultimately build a community of people which get sh*t done and make a difference.</p>
-		</section>
+		</section> -->
+			<div class="about-wrapper">
+				<h3>About Hackathons Australia</h3>
+				<p>Hackathons Australia is a community group that empowers hackathons to have the right skills, people, partners, education and processes to ensure it is a success.
+				To be informed about the hackathons, <a href="http://ems.gs/3vKH0jLXet">complete this form.</a></p>
+			</div>
+
+			<div class="about-wrapper">
+				<h3>What we do</h3>
+
+				<section class="half">
+					<div>
+						<div class="about-icons"><i class="fa fa-handshake-o"></i></div>
+						<div class="about-detail">Help Hackathon organisers attract participants by being a Community Partner.</div>
+					</div>
+					<div>
+						<span class="about-icons"><i class="fa fa-bullhorn"></i></span>
+						<div class="about-detail">Let participants know which Hackathons are happening in their area.</div>
+					</div>
+				</section>
+
+				<section class="half">
+					<div>
+						<span class="about-icons"><i class="fa fa-lightbulb-o"></i></span>
+						<div class="about-detail">Help partners/sponsors to be involved in the innovation ecosystem.</div>
+					</div>
+
+					<div>
+						<span class="about-icons"><i class="fa fa-users"></i></span>
+						<div class="about-detail">Build a community of people which get sh*t done and make a difference.</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="clear-fix"></div>
+
+
+	</div>
+
+	<div class="contact-us">
+		<h3><a href="mailto:hackathonsaustralia@gmail.com">Contact us</a> to find out more!</h3>
 	</div>
 
 
@@ -89,9 +135,8 @@
 
 	<div id="participate"></div>
 	<div class="inner-wrapper">
-		<h3>Participate</h3>
+		<h3 id="participate-head">Participate <span id="click-state">(click your state for Hackathons)</span></h3>
 
-		<p id="click-state">Click your state</p>
 		<div id="aus">
 			<svg
 				 xmlns:svg="http://www.w3.org/2000/svg"
@@ -164,7 +209,6 @@
 			</div>
 
 			<p class="description">
-				<span class="about">About this event</span>
 
 			</p>
 		</div> -->
@@ -199,7 +243,6 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
 							Create a working product or prototype from scratch
 						</p>
 					</div>
@@ -231,7 +274,6 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event..</span>
 								Engage with open data to address real-world problems, on Earth and in space.
 							</p>
 						</div>
@@ -263,7 +305,6 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
 								Build smarter cities
 							</p>
 						</div>
@@ -305,7 +346,7 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
+
 							Learning and knowledge transfer – with access to secret data
 						</p>
 					</div>
@@ -337,7 +378,6 @@
 						 </div>
 
 						 <p class="description">
-							 <span class="about">About this event</span>
 							 A hackathon that is not limited to one theme or challenge and is open to any ideas.
 						 </p>
 					 </div>
@@ -369,7 +409,6 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
 							Help improve the lives of refugee families in Australia
 						</p>
 					</div>
@@ -402,7 +441,6 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
 							A global health hackathon to recruit interns with programming or computer science backgrounds
 
 						</p>
@@ -434,7 +472,6 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
 							Prototype technology solutions to resource challenges
 						</p>
 					</div>
@@ -468,8 +505,7 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
-							Join in the fun and excitement by working in teams to develop the next generation of technology solutions used by the resources industry
+														Join in the fun and excitement by working in teams to develop the next generation of technology solutions used by the resources industry
 						</p>
 					</div>
 					<div class="clear-fix"></div>
@@ -500,8 +536,7 @@
 						</div>
 
 						<p class="description">
-							<span class="about">About this event</span>
-							Bringing together the brightest and nicest techies and professionals to work together and 'give back'
+														Bringing together the brightest and nicest techies and professionals to work together and 'give back'
 						</p>
 					</div>
 				</div> <!--end of QLD-------------------------------------------------------------->
@@ -546,163 +581,75 @@
 	<!------------------------------------------------------------------------------------------>
 	<div id="meetups"></div>
 
-	<div class="inner-wrapper">
+	<div class="social-events">
 		<div class="social-wrapper">
-			<h3>Socials</h3>
-			<aside>
-				<h4>Save the Date!</h4>
-				<p><i class="fa fa-map-marker"></i> Sydney </p>
-				<p>Seed Movie Screening</p>
+				<h3>Social Events</h3>
+					<div class="upcoming-inner-wrapper">
 
-				<div class="">
-					<div class="speakers detail"><i class="fa fa-bullhorn"> </i>
-						Speakers: Sydney's very own team who participated in the movie's hackathon in Silicon Valley
+						<h4>Seed Movie Screening</h4>
+
+						<div class="">
+							<div class="speakers detail"><i class="fa fa-bullhorn"> </i>
+								Speakers: Sydney's very own team who participated in the movie's hackathon in Silicon Valley
+							</div>
+
+							<div class="date detail"><i class="fa fa-calendar-o"> </i>
+								6pm for 6:30 pm start on Tuesday May 23rd, 2017
+							</div>
+							<div class="location detail"><i class="fa fa-map-marker"> </i>
+								Aeona on 1 Buckingham Street, Surry Hills
+							</div>
+
+							<div class="register detail"><i class="fa fa-pencil-square-o"> </i>
+								<p class="wrap">Register: <a href="https://hackausseedscreening.eventbrite.com.au">https://hackausseedscreening.eventbrite.com.au</a></p>
+							</div>
+						</div>
+						<br>
+						<div class="detail">Description: A movie showcasing what it's like to participate in AngelHack's Global program in Silicon Valley.</div>
 					</div>
 
-					<div class="date detail"><i class="fa fa-calendar-o"> </i>
-						6pm for 6:30 pm start on Tuesday May 23rd, 2017
-					</div>
-					<div class="location detail"><i class="fa fa-map-marker"> </i>
-						Aeona on 1 Buckingham Street, Surry Hills
-					</div>
 
-					<div class="register detail"><i class="fa fa-pencil-square-o"> </i>
-						Register: <a href="https://hackausseedscreening.eventbrite.com.au">https://hackausseedscreening.eventbrite.com.au</a>
-					</div>
-				</div>
-				<br>
-				<div class="detail">Description: A movie showcasing what it's like to participate in AngelHack's Global program in Silicon Valley.</div>
-
-
-			</aside>
-			<article>
-				<div class="eventbrite">
-					<div style="width:100%; text-align:left;">
-						<iframe src="//eventbrite.com.au/tickets-external?eid=33538392234&ref=etckt" frameborder="0" height="300" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
-						</iframe>
-						<div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:center;" >
-							<a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com.au/">Powered by Eventbrite</a>
+					<div class="eventbrite">
+						<div style="width:100%; text-align:left;">
+							<iframe src="//eventbrite.com.au/tickets-external?eid=33538392234&ref=etckt" frameborder="0" height="475" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
+							</iframe>
+							<div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:center;" >
+								<a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com.au/">Powered by Eventbrite</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			</article>
 
-			<aside>
-				<h4>Save the Date!</h4>
-				<p><i class="fa fa-map-marker"></i> Sydney </p>
-				<p>Using hackathons to accelerate innovation</p>
+					<div class="upcoming-inner-wrapper">
 
-				<div class="">
-					<div class="speakers detail"><i class="fa fa-bullhorn"> </i>
-						Speakers: Johanna Pittman, Program Director at Blue Chilli
-					</div>
-					<div class="date detail"><i class="fa fa-calendar-o"> </i>
-						6:30pm on Tuesday 23rd April
-					</div>
-					<div class="location detail"><i class="fa fa-map-marker"> </i>
-						Blue Chilli on 125 York Street, Sydney
-					</div>
+						<h4>Using hackathons to accelerate innovation</h4>
 
-					<div class="register detail"><i class="fa fa-pencil-square-o"> </i>
-						Register: <a href="https://hackaussydneymay.eventbrite.com.au">https://hackaussydneymay.eventbrite.com.au</a>
-					</div>
-				</div>
-				<br>
-				<div class="detail">Project Pitches: Smart Cities Hackathon and Nasa SpaceApps Challenge Hackathon projects.</div>
+						<div class="">
+							<div class="speakers detail"><i class="fa fa-bullhorn"> </i>
+								Speakers: Johanna Pittman, Program Director at Blue Chilli
+							</div>
+							<div class="date detail"><i class="fa fa-calendar-o"> </i>
+								6:30pm on Tuesday 23rd April
+							</div>
+							<div class="location detail"><i class="fa fa-map-marker"> </i>
+								Blue Chilli on 125 York Street, Sydney
+							</div>
 
-				<!-- <div class="button-wrapper">
-					<ul class="buttons">
-						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSftUxK3nNttLKAuSkeufljnEVOkCnYQLYehQglWBdZy18npTg/viewform" class="submit">Come to our next event</a></li>
-						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf3fVOy3rbATpVh8nAN_xVfZ4wFQY7rtYBwXpCeSl_70aXCHQ/viewform" class="submit">Submit a Hackathon</a></li>
-
-					</ul>
-				</div> -->
-			</aside>
-			<article></article>
-		</div>
-	</div>
-
-
-<!------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------>
-<!-- ////////////////////////          Subscription         ///////////////////////// -->
-<!------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------>
-
-	<!-- Web Form Code -->
-	<div class="clear-fix"></div><br>
-	<div class="webform">
-		<div class="webform-outer-wrapper">
-			<h3>Join our Community</h3>
-			<div class="webform-inner-wrapper">
-				<p>Sign up for latest news, events and much more!</p>
-
-				<form method="POST" class="em_wfe_form" target="_blank" id="" name="" action="https://www.vision6.com.au/em/forms/subscribe.php?db=360803&s=132723&a=58689&k=927d0dd&va=5" enctype="multipart/form-data">
-					<input type="hidden" name="webform_submit_catch" value="" />
-					<input type="hidden" name="sf_catch" value="" />
-					<div rel="5" class="wfe_component" id="1406144">
-						<input type="text" value="" id="em_wfs_formfield_3095505" name="em_wfs_formfield_3095505" validation="" ftype="1" maxlength=255 size=30 placeholder="First Name" />
-					</div>
-					<div rel="5" class="wfe_component" id="1406143">
-						<input type="text" value="" id="em_wfs_formfield_3095506" name="em_wfs_formfield_3095506" validation="1" ftype="1" maxlength=255 size=30 placeholder="Email" />
-					</div>
-					<div rel="5" class="wfe_component" id="1406157"><span id="newsletter-state">State<span>
-						<select id="em_wfs_formfield_3095507" name="em_wfs_formfield_3095507" ftype="5"  placeholder="State">
-							<option value="" selected="selected">Select...</option>
-							<option value="Australian Capital Territory">Australian Capital Territory</option>
-							<option value="New South Wales">New South Wales</option>
-							<option value="Northern Territory">Northern Territory</option>
-							<option value="Queensland">Queensland</option>
-							<option value="South Australia">South Australia</option>
-							<option value="Tasmania">Tasmania</option>
-							<option value="Victoria">Victoria</option>
-							<option value="Western Australia">Western Australia</option>
-						</select>
-					</div>
-					<div rel="5" class="wfe_component role" id="1406158">
-						<p>Your role at a hackathon</p>
-						<fieldset id="em_wfs_formfield_3539140_fieldset" style="border:0; margin:0; padding:0">
-							<span>
-								<input type="checkbox" id="em_wfs_formfield_3539140_option_0" name="em_wfs_formfield_3539140[Hustler (business/marketing lead)]" />
-								<label for="em_wfs_formfield_3539140_option_0">Hustler (business/marketing lead)
-								</label>
-							</span>
-							<span>
-								<input type="checkbox" id="em_wfs_formfield_3539140_option_1" name="em_wfs_formfield_3539140[Hipster (UX/UI/designer lead)]" />
-								<label for="em_wfs_formfield_3539140_option_1">Hipster (UX/UI/designer lead)
-								</label>
-							</span>
-							<span>
-								<input type="checkbox" id="em_wfs_formfield_3539140_option_2" name="em_wfs_formfield_3539140[Hacker (Developer/Technical lead)]" />
-								<label for="em_wfs_formfield_3539140_option_2">Hacker (Developer/Technical lead)
-								</label>
-							</span>
-							<span>
-								<input type="checkbox" id="em_wfs_formfield_3539140_option_3" name="em_wfs_formfield_3539140[Organiser]" />
-								<label for="em_wfs_formfield_3539140_option_3">Organiser
-								</label>
-							</span>
-							<span>
-								<input type="checkbox" id="em_wfs_formfield_3539140_option_4" name="em_wfs_formfield_3539140[Partner/Sponsor]" />
-								<label for="em_wfs_formfield_3539140_option_4">Partner/Sponsor</label>
-							</span>
-							<span>
-								<input type="checkbox" id="em_wfs_formfield_3539140_option_5" name="em_wfs_formfield_3539140[Other]" />
-								<label for="em_wfs_formfield_3539140_option_5">Other</label>
-							</span>
-						</fieldset>
-					</div>
-					<div rel="3" class="wfe_component" id="1406141">
-						<div align="left">
-							<input class="wfe_button" type="submit" title="Submit" value="Submit" />
+							<div class="register detail"><i class="fa fa-pencil-square-o"> </i>
+								<p class="wrap">Register: <a href="https://hackaussydneymay.eventbrite.com.au">https://hackaussydneymay.eventbrite.com.au</a></p>
+							</div>
 						</div>
+						<br>
+						<div class="detail">Project Pitches: Smart Cities Hackathon and Nasa SpaceApps Challenge Hackathon projects.</div>
+
+						<!-- <div class="button-wrapper">
+							<ul class="buttons">
+								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSftUxK3nNttLKAuSkeufljnEVOkCnYQLYehQglWBdZy18npTg/viewform" class="submit">Come to our next event</a></li>
+								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf3fVOy3rbATpVh8nAN_xVfZ4wFQY7rtYBwXpCeSl_70aXCHQ/viewform" class="submit">Submit a Hackathon</a></li>
+
+							</ul>
+						</div> -->
 					</div>
-					<div style="display:none;position:absolute;left:-10000px;top:-10000px;">
-						<label for="webform_2e30550" style="display:none;visibility:hidden;width:0px;height:0px;font-size:1px;">Ignore</label>
-						<input type="text" id="webform_2e30550" name="webform_2e30550" value="" style="display:none;visibility:hidden;width:0px;height:0px;font-size:1px;" />
-					</div>
-				</form>
-			</div>
+
 		</div>
 	</div>
 
@@ -714,9 +661,8 @@
 		<br>
 		<div id="pastanchor"></div>
 		<div class="inner-wrapper"  id="past">
-			<h3>Past Hackathons</h3>
+			<h3>Past Hackathons <span id="click-state">(click your state for Hackathons)</span></h3>
 
-			<p id="click-state">Click your state</p>
 			<div id="aus">
 				<svg
 					 xmlns:svg="http://www.w3.org/2000/svg"
@@ -787,8 +733,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Using technology, problem themes may include the 21st century digital age, remote working, online personal data and protecting creative work.
+																Using technology, problem themes may include the 21st century digital age, remote working, online personal data and protecting creative work.
 							</p>
 
 						</div>
@@ -819,8 +764,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Help improve the experience for girls participating in football and the Westfield W-League fan engagement
+																Help improve the experience for girls participating in football and the Westfield W-League fan engagement
 							</p>
 
 						</div>
@@ -850,8 +794,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Create innovative solutions for transport systems for smart cities
+																Create innovative solutions for transport systems for smart cities
 							</p>
 
 						</div>
@@ -881,8 +824,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								An open Hackathon for everyone interested in VR
+																An open Hackathon for everyone interested in VR
 							</p>
 
 						</div>
@@ -914,8 +856,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								An open Hackathon for everyone interested in VR
+																An open Hackathon for everyone interested in VR
 							</p>
 
 						</div>
@@ -947,8 +888,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								 Be in the ideal environment to build a startup.
+																 Be in the ideal environment to build a startup.
 								 <span>Outcomes: https://www.linkedin.com/pulse/sydney-startup-weekend-recap-toby-heap</span>
 							</p>
 
@@ -981,8 +921,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								 Hack solutions for everyday challenges as identified by people with disabilities, therapists and caregivers
+																 Hack solutions for everyday challenges as identified by people with disabilities, therapists and caregivers
 							</p>
 
 						</div>
@@ -1017,8 +956,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								 Using NAB’s unique data-sets and APIs, develop a digital based solution to support, empower and provide insights to health industry customers.
+																 Using NAB’s unique data-sets and APIs, develop a digital based solution to support, empower and provide insights to health industry customers.
 							</p>
 
 						</div>
@@ -1050,8 +988,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Bring your ideas to life using data
+																Bring your ideas to life using data
 							</p>
 
 						</div>
@@ -1086,8 +1023,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Help the world stay open, encourage trust between people and provoke meaningful connection and conversation
+																Help the world stay open, encourage trust between people and provoke meaningful connection and conversation
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1122,8 +1058,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Develop prototype technology solutions to resource challenges
+																Develop prototype technology solutions to resource challenges
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1153,8 +1088,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Innovating the pharmaceutical industry. <span>Outcomes: https://ajp.com.au/news/sickie-app-takes-top-prize/</span>
+																Innovating the pharmaceutical industry. <span>Outcomes: https://ajp.com.au/news/sickie-app-takes-top-prize/</span>
 
 							</p>
 						</div>
@@ -1185,8 +1119,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Use data from the City of Ballarat and Western Bulldogs
+																Use data from the City of Ballarat and Western Bulldogs
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1217,8 +1150,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Help customers move to easier, faster, richer payments and build, monitor, and manage wealth
+																Help customers move to easier, faster, richer payments and build, monitor, and manage wealth
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1254,8 +1186,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Find solutions to problems facing the Great Barrier Reef
+																Find solutions to problems facing the Great Barrier Reef
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1286,8 +1217,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Use the purchase history of the customer, plus any data sources they can find and use responsibly, to further equip our agents with useful insights to share with customers while planning their travel
+																Use the purchase history of the customer, plus any data sources they can find and use responsibly, to further equip our agents with useful insights to share with customers while planning their travel
 
 							</p>
 						</div>
@@ -1319,8 +1249,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Combining technology, psychology, art and design to create immersive, personalised and multi-sensory experiences
+																Combining technology, psychology, art and design to create immersive, personalised and multi-sensory experiences
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1351,8 +1280,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Create a technical solution for local community digital conservation and receive seed funding to grow your business
+																Create a technical solution for local community digital conservation and receive seed funding to grow your business
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1383,8 +1311,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Bring together tech engineers, former refugees and asylum seekers, entrepreneurs and startups together with NGOs and other agencies in order to address the crisis in ways where the technology world can bring its considerable firepower develop creative tech solutions to help refugees settle into the Queensland community.
+																Bring together tech engineers, former refugees and asylum seekers, entrepreneurs and startups together with NGOs and other agencies in order to address the crisis in ways where the technology world can bring its considerable firepower develop creative tech solutions to help refugees settle into the Queensland community.
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1415,8 +1342,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Collaborate and get involved with a group of motivated individuals passionate about disrupting the business banking and financial technology industries
+																Collaborate and get involved with a group of motivated individuals passionate about disrupting the business banking and financial technology industries
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1447,8 +1373,7 @@
 							</div>
 
 							<p class="description">
-								<span class="about">About this event</span>
-								Producing a modified version of Minecraft for children with Type 1 Diabetes and their families. <span>Outcomes: http://www.mct1.io/</span>
+																Producing a modified version of Minecraft for children with Type 1 Diabetes and their families. <span>Outcomes: http://www.mct1.io/</span>
 							</p>
 						</div>
 						<div class="clear-fix"></div>
@@ -1459,6 +1384,94 @@
 			</div> <!--upcoming-wrapper-->
 		</div><!--inner wrapper-->
 		<div class="clear-fix"></div>
+
+
+		<div id="chat"> Subscribe </div>
+		<span id="exit">X</span>
+
+
+
+		<div id="chatBox">
+			<div id="close">X</div>
+			<!-- Web Form Code -->
+			<div class="join"></div>
+			<div class="webform">
+				<div class="webform-outer-wrapper">
+					<h3>Join our Community</h3>
+					<div class="webform-inner-wrapper">
+						<p>Sign up for latest news, events and much more!</p>
+
+						<form method="POST" class="em_wfe_form" target="_blank" id="" name="" action="https://www.vision6.com.au/em/forms/subscribe.php?db=360803&s=132723&a=58689&k=927d0dd&va=5" enctype="multipart/form-data">
+							<input type="hidden" name="webform_submit_catch" value="" />
+							<input type="hidden" name="sf_catch" value="" />
+							<div rel="5" class="wfe_component" id="1406144">
+								<input type="text" value="" id="em_wfs_formfield_3095505" name="em_wfs_formfield_3095505" validation="" ftype="1" maxlength=255 size=30 placeholder="First Name" />
+							</div>
+							<div rel="5" class="wfe_component" id="1406143">
+								<input type="text" value="" id="em_wfs_formfield_3095506" name="em_wfs_formfield_3095506" validation="1" ftype="1" maxlength=255 size=30 placeholder="Email" />
+							</div>
+							<div rel="5" class="wfe_component" id="1406157"><span id="newsletter-state">State<span>
+								<select id="em_wfs_formfield_3095507" name="em_wfs_formfield_3095507" ftype="5"  placeholder="State">
+									<option value="" selected="selected">Select...</option>
+									<option value="Australian Capital Territory">Australian Capital Territory</option>
+									<option value="New South Wales">New South Wales</option>
+									<option value="Northern Territory">Northern Territory</option>
+									<option value="Queensland">Queensland</option>
+									<option value="South Australia">South Australia</option>
+									<option value="Tasmania">Tasmania</option>
+									<option value="Victoria">Victoria</option>
+									<option value="Western Australia">Western Australia</option>
+								</select>
+							</div>
+							<div rel="5" class="wfe_component role" id="1406158">
+								<p>Your role at a hackathon</p>
+								<fieldset id="em_wfs_formfield_3539140_fieldset" style="border:0; margin:0; padding:0">
+									<span>
+										<input type="checkbox" id="em_wfs_formfield_3539140_option_0" name="em_wfs_formfield_3539140[Hustler (business/marketing lead)]" />
+										<label for="em_wfs_formfield_3539140_option_0">Hustler (business/marketing lead)
+										</label>
+									</span>
+									<span>
+										<input type="checkbox" id="em_wfs_formfield_3539140_option_1" name="em_wfs_formfield_3539140[Hipster (UX/UI/designer lead)]" />
+										<label for="em_wfs_formfield_3539140_option_1">Hipster (UX/UI/designer lead)
+										</label>
+									</span>
+									<span>
+										<input type="checkbox" id="em_wfs_formfield_3539140_option_2" name="em_wfs_formfield_3539140[Hacker (Developer/Technical lead)]" />
+										<label for="em_wfs_formfield_3539140_option_2">Hacker (Developer/Technical lead)
+										</label>
+									</span>
+									<span>
+										<input type="checkbox" id="em_wfs_formfield_3539140_option_3" name="em_wfs_formfield_3539140[Organiser]" />
+										<label for="em_wfs_formfield_3539140_option_3">Organiser
+										</label>
+									</span>
+									<span>
+										<input type="checkbox" id="em_wfs_formfield_3539140_option_4" name="em_wfs_formfield_3539140[Partner/Sponsor]" />
+										<label for="em_wfs_formfield_3539140_option_4">Partner/Sponsor</label>
+									</span>
+									<span>
+										<input type="checkbox" id="em_wfs_formfield_3539140_option_5" name="em_wfs_formfield_3539140[Other]" />
+										<label for="em_wfs_formfield_3539140_option_5">Other</label>
+									</span>
+								</fieldset>
+							</div>
+							<div rel="3" class="wfe_component" id="1406141">
+								<div align="center">
+									<input class="wfe_button" type="submit" title="Submit" value="Submit" />
+								</div>
+
+							</div>
+							<div style="display:none;position:absolute;left:-10000px;top:-10000px;">
+								<label for="webform_2e30550" style="display:none;visibility:hidden;width:0px;height:0px;font-size:1px;">Ignore</label>
+								<input type="text" id="webform_2e30550" name="webform_2e30550" value="" style="display:none;visibility:hidden;width:0px;height:0px;font-size:1px;" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
 
 
 	<!------------------------------------------------------------------------------------------>
@@ -1472,19 +1485,17 @@
 			<section class="one-third" id="footer-third">
 				<h3>Contact</h3>
 				<h4>Angela Bee</h4>
-				<p class="footercontact">
-					<i class="fa fa-mobile"></i> 0421 772 799<br>
-					<i class="fa fa-envelope"> </i>hackathonsaustralia@gmail.com
-				</p>
+				<h5>Founder of #HackAUS</h5>
+				<p>	hackathonsaustralia (at) gmail.com</p>
 			</section>
 			<section class="one-third" id="footer-third">
 				<h3>Social</h3>
-				<br>
 				<ul class="social">
-					<li><a href="https://www.facebook.com/groups/hackathonsaustralia/"><i class="fa fa-facebook" target="_blank"></i></a></li>
-					<li><a href="https://twitter.com/hackaus" target="_blank"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://www.linkedin.com/company-beta/7798394/?pathWildcard=7798394" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://www.facebook.com/groups/hackathonsaustralia/"><i class="fa fa-facebook" target="_blank"></i></a><span>2000 members</span></li>
+					<li><a href="https://twitter.com/hackaus" target="_blank"><i class="fa fa-twitter"></i></a><span>@HackAUS</span></li>
+					<li><a href="https://www.linkedin.com/company-beta/7798394/?pathWildcard=7798394" target="_blank"><i class="fa fa-linkedin"></i></a><span>#HackAUS</span></li>
 				</ul>
+
 			</section>
 			<section class="one-third" id="footer-third-last">
 				<h3>#HackAUS</h3>

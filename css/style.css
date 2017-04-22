@@ -27,9 +27,8 @@ body {
 	background-size: cover;
 	text-align: center;
 	color: #fff;
-	padding-top: 190px;
-	min-height: 600px;
-	letter-spacing: 2px;
+	padding-top: 110px;
+	min-height: 390px;
 }
 
 .banner h1 {
@@ -46,7 +45,7 @@ a {
 
 h3 {
 	font-size: 190%;
-	padding: 0;
+	padding: 0.5em;
 }
 
 .one-third h3 {
@@ -130,9 +129,41 @@ nav ul li a:hover, .current {
 	line-height: 5px;
 }
 
+/* //////////////// about icons //////////////////*/
+.about-wrapper {
+	padding: 2em;
+}
+
+.about-icons {
+	float: left;
+	width: 100%;
+	padding: 0 10px 10px 0;
+	font-size: 50px;
+	color: #DD4814;
+
+}
+.about-detail {
+	text-align: left;
+	min-height: 160px;
+	margin: 2em 2em 2em 4em;
+}
+
+.half {
+	vertical-align: top;
+	width: 45%;
+	display: inline-block;
+	margin-right: 0 auto;
+
+}
+
+.contact-us {
+	background: white;
+	padding: 3em;
+}
+
 /* ///////////inner wrapper //////////////*/
 .inner-wrapper {
-	max-width: 1200px;
+	max-width: 968px;
 	margin: 90px auto;
 }
 
@@ -159,7 +190,6 @@ p {
 	font-family: 'Droid Sans', sans-serif;
 	text-align: left;
 	font-size: 125%;
-	padding: 2%;
 }
 
 .clear-fix {
@@ -215,15 +245,14 @@ a.submit {
 	text-align: left;
 }
 .description {
-	float: left;
-	width: 55%;
-	min-height: 200px;
+	padding: 0.5em 0 1em 0;
+
 }
-.details {
+/*.details {
 	float: right;
 	width: 40%;
 	padding: 2%;
-}
+}*/
 .date {
 	text-align: left;
 	font-size: 110%;
@@ -244,9 +273,44 @@ span.about {
 	display: block;
 }
 
+.upcoming-inner-wrapper {
+	background: white;
+	padding: 1em;
+	margin: 1em 0;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
 
 
+/* ////////////////////// social events //////////////////////////*/
+.social-events {
+	background: white;
+	padding: 0.5em;
+}
 
+.social-wrapper {
+	max-width: 800px;
+	margin: 90px auto;
+}
+
+.wrap {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
 
 /* /////////////// footer //////////////*/
 footer {
@@ -285,19 +349,42 @@ footer a {
 	color: #959595;
 }
 
+.social {
+	list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .social li {
-	display: inline;
+	width: 30%;
 }
 
 .social i {
 	font-size: 245%;
-	padding: 2% 6%;
+	/*padding: 2% 6%;*/
 	color: #959595;
 }
 
 .social i:hover {
 	color: #F5F5F5;
 }
+
+.social span {
+	display: block;
+	text-align: center;
+}
+
 
 .footercontact {
 	font-size: 100%;
@@ -307,15 +394,6 @@ footer a {
 	text-align: center;
 	font-size: 180%;
 	color: #959595;
-}
-
-.footercontact i {
-	font-size: 110%;
-	padding: 2% 6%;
-}
-
-.footercontact .fa-mobile {
-	font-size: 200%;
 }
 
 h5 a:hover {
@@ -332,7 +410,7 @@ footer.second {
 	/*padding-bottom: 1.6%;*/
 }
 .second p {
-	padding: 1%;
+	/*padding: 1%;*/
 }
 
 /* //////////////////// map ////////////////////// */
@@ -353,8 +431,13 @@ footer.second {
 	padding: 0;
 }
 
+#participate-head {
+	padding: 1em;
+}
+
 #click-state {
-	text-align: center;
+	font-style: italic;
+	font-size: 18px;
 }
 
 .upcoming-wrapper {
@@ -503,13 +586,6 @@ footer.second {
 		text-align: center;
 	}
 
-	.footercontact i {
-		display: none;
-	}
-	.footercontact .fa-mobile {
-		font-size: 200%;
-	}
-
 	.social-wrapper aside {
 		margin: 0 auto;
 		width: 100%;
@@ -531,6 +607,14 @@ footer.second {
  	width: 100%;
 	margin: 0 auto;
  }
+
+ .half {
+ 	width: 100%;
+
+ }
+ .about-detail {
+	 margin: 0;
+ }
 }
 
 @media screen and (max-width: 610px) {
@@ -550,9 +634,9 @@ footer.second {
 /* /////////////// subscription /////////////*/
 .webform-outer-wrapper {
 	max-width: 400px;
-	margin: 20px auto;
-	padding: 10px 2px 20px 2px;
-	border: 1px solid black;
+	/*margin: 20px auto;*/
+	/*padding: 10px 2px 5px 2px;*/
+	padding: 1em;
 }
 .webform-inner-wrapper {
 	margin: 0 auto;
@@ -567,7 +651,8 @@ input.wfe_button {
 	font-size: 13px;
 	border-radius: 3px;
 	cursor: pointer;
-	width: 100%;
+	width: 50%;
+	margin: 0.5em;
 	background-color: #DD4814;
 	color: white;
 }
@@ -599,7 +684,7 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 /* state */
 #em_wfs_formfield_3095507 {
 	height: 22px;
-	width: 80%;
+	width: 70%;
 	margin: 15px 0 15px 15px;
 }
 #newsletter-state {
@@ -623,9 +708,7 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 	.hackathon-title {
 		font-size: 130%;
 	}
-	#about p {
-		padding: 0 2em;
-	}
+
 	.button-wrapper {
 		width: 100%;
 	}
@@ -663,4 +746,53 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 /*nav*/
 #meetups, #pastanchor {
 	margin: 4em;
+}
+
+
+#chat {
+	position:fixed;
+	width:200px;
+	height:auto;
+	padding:5px;
+	background: #DD4814;
+	color:#EDEDED;
+	text-align:center;
+	font-size:20px;
+	bottom:0px;
+	right:15px;
+	cursor:pointer;
+	border-radius: 3px;
+
+}
+
+#chatBox {
+	display:none;
+	position:fixed;
+	background:#EDEDED;
+	bottom:0px;
+	right:15px;
+}
+
+#close {
+	position: absolute;
+	width: 336px;
+	height: 35px;
+	padding: 4px 10px 11px 5px;
+	text-align: right;
+	color: #F0F0F0;
+	right: 0px;
+	top: -19px;
+	cursor: pointer;
+	font-size: 27px;
+	background: rgb(169, 169, 169);
+}
+
+#exit {
+	position:fixed;
+	padding:5px;
+	font-size:px;
+	bottom:0px;
+	right:18px;
+	cursor:pointer;
+	border-radius: 3px;
 }

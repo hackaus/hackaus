@@ -82,4 +82,41 @@ $(document).ready(function() {
   //   $(this).addClass('active').siblings().removeClass('active')
   //   $('.hobart_p').show().siblings().hide('hobart_p');
   // });
+
+  $("#chat").on("click", function() {
+
+    $('#chat').fadeOut(500);
+    $('#chatBox').fadeIn(1000);
+  });
+
+  $("#close").on("click", function() {
+    $('#chatBox').fadeOut(500);
+    $('#chat').fadeIn(1000);
+  });
+
+  $("#exit").on("click", function() {
+    $('#chat').hide();
+    $(this).hide();
+
+
+  });
+
+
+
+  $(window).bind('scroll', function() {
+     if ($(window).scrollTop() > 4177) {
+         $('#chat').hide();
+     }
+     else {
+         $('#chat').show();
+     }
+   });
+
+   $(window).scroll( function() {
+ var scrolled_val = $(document).scrollTop().valueOf();
+ console.log(scrolled_val+ ' = scroll value');
+});
+
+
+
 });
