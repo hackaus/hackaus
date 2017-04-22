@@ -94,12 +94,12 @@ $(document).ready(function() {
     $('#chat').fadeIn(1000);
   });
 
-  $("#exit").on("click", function() {
-    $('#chat').hide();
-    $(this).hide();
-
-
-  });
+  // $("#exit").on("click", function() {
+  //   $('#chat').hide();
+  //   $(this).hide();
+  //
+  //
+  // });
 
 
 
