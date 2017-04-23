@@ -83,6 +83,7 @@ $(document).ready(function() {
   //   $('.hobart_p').show().siblings().hide('hobart_p');
   // });
 
+
   $("#chat").on("click", function() {
 
     $('#chat').fadeOut(500);
@@ -94,29 +95,16 @@ $(document).ready(function() {
     $('#chat').fadeIn(1000);
   });
 
+
+
+
+
   // $("#exit").on("click", function() {
   //   $('#chat').hide();
   //   $(this).hide();
   //
   //
   // });
-
-
-
-  $(window).bind('scroll', function() {
-     if ($(window).scrollTop() > 4177) {
-         $('#chat').hide();
-     }
-     else {
-         $('#chat').show();
-     }
-   });
-
-   $(window).scroll( function() {
- var scrolled_val = $(document).scrollTop().valueOf();
- console.log(scrolled_val+ ' = scroll value');
-});
-
 
 
 });

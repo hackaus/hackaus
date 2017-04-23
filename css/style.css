@@ -48,7 +48,7 @@ h3 {
 	padding: 0.5em;
 }
 
-.one-third h3 {
+.one-half h3 {
 	padding: 5% 0;
 }
 
@@ -129,7 +129,9 @@ nav ul li a:hover, .current {
 	line-height: 5px;
 }
 
+
 /* //////////////// about icons //////////////////*/
+
 .about-wrapper {
 	padding: 2em;
 }
@@ -156,34 +158,62 @@ nav ul li a:hover, .current {
 
 }
 
+
+.full-length {
+	background: white;
+}
+
 .contact-us {
 	background: white;
 	padding: 3em;
 }
 
+.contact-us {
+	border-top: 1px solid #e2e5e8;
+	border-bottom: 1px solid #e2e5e8;
+}
+
+
+hr {
+	border: 1px solid grey;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /* ///////////inner wrapper //////////////*/
 .inner-wrapper {
 	max-width: 968px;
-	margin: 90px auto;
-}
-
-.one-third {
-	width: 29%;
-	float: left;
-	margin: 2%;
-}
-
-.circle {
-	width: 150px;
-	height: 150px;
-	background: #DD4814;
 	margin: 0 auto;
-	border-radius: 50%;
 }
-.one-third i {
-	color: #F0F0F0;
-	font-size: 555%;
-	padding: 20%;
+
+.stats {
+	background: rgb(240, 240, 240);
+	padding: 1em 0;
+}
+
+.one-half {
+	width: 40%;
+	display: inline-block;
+	margin: 1%;
+}
+.one-half img {
+	max-width: 75%;
+	margin: -15px;
+}
+.one-half .stat-i {
+	display: inline-block;
+	width: 18%;
+	font-size: 50px;
+	vertical-align: top;
+}
+.stat-detail {
+	display: inline-block;
+	width: 52%;
+	vertical-align: top;
+}
+
+.stats-two {
+	display: none;
 }
 
 p {
@@ -216,8 +246,12 @@ aside p {
 }
 
 
-.one-third img {
+.one-half img {
 	padding-bottom: 2%;
+}
+
+span.big {
+	font-size: 40px;
 }
 
 /* submit a hackathon*/
@@ -232,7 +266,8 @@ a.submit {
 }
 
 .buttons li {
-	display: inline;
+	/*display: inline;*/
+	padding: 0.5em;
 }
 
 .submit:hover {
@@ -316,7 +351,7 @@ span.about {
 footer {
 	background: #333;
 	overflow: hidden;
-	opacity: .9;
+	opacity: .999;
 }
 
 #footer-inner {
@@ -327,10 +362,12 @@ footer {
 footer .one-third {
 	width: 33%;
 	margin: 2% 0;
+	float: left;
 }
 
 footer h3 {
 	color: #959595;
+	padding: 1em;
 }
 
 footer p {
@@ -406,11 +443,16 @@ h5 a:hover {
 footer.second {
 	border-top: 1px solid #4D4E50;
 	max-height: 50px;
-	opacity: .95;
+	opacity: .999;
 	/*padding-bottom: 1.6%;*/
 }
 .second p {
 	/*padding: 1%;*/
+}
+
+.footer-subscribe {
+	margin: 0 auto;
+	width: 70%;
 }
 
 /* //////////////////// map ////////////////////// */
@@ -432,7 +474,7 @@ footer.second {
 }
 
 #participate-head {
-	padding: 1em;
+	padding: 1.5em;
 }
 
 #click-state {
@@ -467,6 +509,66 @@ footer.second {
   width: 100%;
   display: none;
 }
+
+
+.eventbrite {
+	/*width: 50%;*/
+}
+
+/*nav*/
+#meetups, #pastanchor {
+	margin: 4em;
+}
+
+
+#chat {
+	position:fixed;
+	width:200px;
+	height:auto;
+	padding:5px;
+	background: #DD4814;
+	color:#EDEDED;
+	text-align:center;
+	font-size:20px;
+	bottom:0px;
+	right:15px;
+	cursor:pointer;
+	border-radius: 3px;
+
+}
+
+#chatBox {
+	display:none;
+	position:fixed;
+	background:#EDEDED;
+	bottom:0px;
+	right:15px;
+}
+
+#close {
+	position: absolute;
+	width: 336px;
+	height: 35px;
+	padding: 4px 10px 11px 5px;
+	text-align: right;
+	color: #F0F0F0;
+	right: 0px;
+	top: -19px;
+	cursor: pointer;
+	font-size: 27px;
+	background: rgb(169, 169, 169);
+}
+
+#exit {
+	position:fixed;
+	padding:5px;
+	font-size:px;
+	bottom:0px;
+	right:18px;
+	cursor:pointer;
+	border-radius: 3px;
+}
+
 
 /* ///////////// Media query ////////////*/
 /* //////////// mobile nav  ////////////*/
@@ -590,6 +692,14 @@ footer.second {
 		margin: 0 auto;
 		width: 100%;
 	}
+	.stats {
+		display: none;
+	}
+	.stats-two {
+		display: block;
+		background: #F0F0F0;
+		padding: 0.5em 2em;
+	}
 }
 
 @media screen and (max-width: 786px) {
@@ -651,8 +761,8 @@ input.wfe_button {
 	font-size: 13px;
 	border-radius: 3px;
 	cursor: pointer;
-	width: 50%;
-	margin: 0.5em;
+	width: 100%;
+	/*margin: 0.5em;*/
 	background-color: #DD4814;
 	color: white;
 }
@@ -692,7 +802,7 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 }
 
 .role {
-	padding: 5px 0 20px 0;
+	padding: 0px 0 6px 0;
 }
 
 @media screen and (max-width: 478px) {
@@ -735,64 +845,9 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 		display: none;
 	}
 	.inner-wrapper {
-		margin: 30px auto;
+		margin: 0 auto;
 	}
-}
-
-.eventbrite {
-	/*width: 50%;*/
-}
-
-/*nav*/
-#meetups, #pastanchor {
-	margin: 4em;
-}
-
-
-#chat {
-	position:fixed;
-	width:200px;
-	height:auto;
-	padding:5px;
-	background: #DD4814;
-	color:#EDEDED;
-	text-align:center;
-	font-size:20px;
-	bottom:0px;
-	right:15px;
-	cursor:pointer;
-	border-radius: 3px;
-
-}
-
-#chatBox {
-	display:none;
-	position:fixed;
-	background:#EDEDED;
-	bottom:0px;
-	right:15px;
-}
-
-#close {
-	position: absolute;
-	width: 336px;
-	height: 35px;
-	padding: 4px 10px 11px 5px;
-	text-align: right;
-	color: #F0F0F0;
-	right: 0px;
-	top: -19px;
-	cursor: pointer;
-	font-size: 27px;
-	background: rgb(169, 169, 169);
-}
-
-#exit {
-	position:fixed;
-	padding:5px;
-	font-size:px;
-	bottom:0px;
-	right:18px;
-	cursor:pointer;
-	border-radius: 3px;
+	#chat {
+		display: none;
+	}
 }
