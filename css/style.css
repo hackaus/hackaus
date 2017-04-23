@@ -319,7 +319,7 @@ span.about {
 /* ////////////////////// social events //////////////////////////*/
 .social-events {
 	background: white;
-	padding: 0.5em;
+	padding: 0.5em 0;
 }
 
 .social-wrapper {
@@ -705,13 +705,13 @@ footer.second {
 @media screen and (max-width: 786px) {
   #aus, .upcoming-wrapper {
     width: 100%;
-    padding: 13px 2em;
+    padding: 13px 1.5em;
   }
   .bris, .melb, .adel, .perth, .darwin, .hobart {
    display: none;
  }
  .social-wrapper {
-	 padding: 0 2em;
+	 padding: 0 1.5em;
  }
  #past #aus {
  	width: 100%;
@@ -838,7 +838,7 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 		border: none;
 	}
 	.social-wrapper {
-		padding: 0 2em;
+		padding: 0 1.5em;
 
 	}
 	#meetups {
