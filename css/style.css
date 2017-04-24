@@ -140,7 +140,7 @@ nav ul li a:hover, .current {
 	float: left;
 	width: 100%;
 	padding: 0 10px 10px 0;
-	font-size: 50px;
+	font-size: 60px;
 	color: #DD4814;
 
 }
@@ -188,7 +188,7 @@ hr {
 
 .stats {
 	background: rgb(240, 240, 240);
-	padding: 1em 0;
+	padding: 1em 0 0.5em 0;
 }
 
 .one-half {
@@ -197,19 +197,16 @@ hr {
 	margin: 1%;
 }
 .one-half img {
-	max-width: 75%;
+	max-width: 70px;
 	margin: -15px;
 }
 .one-half .stat-i {
-	display: inline-block;
-	width: 18%;
+
 	font-size: 50px;
-	vertical-align: top;
+
 }
 .stat-detail {
-	display: inline-block;
-	width: 52%;
-	vertical-align: top;
+	padding: 1em 0 0 0;
 }
 
 .stats-two {
