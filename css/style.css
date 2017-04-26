@@ -507,6 +507,9 @@ footer.second {
   display: none;
 }
 
+#updated {
+	font-style: italic;
+}
 
 .eventbrite {
 	/*width: 50%;*/

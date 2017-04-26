@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
   // // Parallax effect
   // var $body = $('body');
@@ -95,16 +97,8 @@ $(document).ready(function() {
     $('#chat').fadeIn(1000);
   });
 
-
-
-
-
-  // $("#exit").on("click", function() {
-  //   $('#chat').hide();
-  //   $(this).hide();
-  //
-  //
-  // });
-
+  var lastUpdated = new Date(document.lastModified);
+  var str = lastUpdated.toString();
+  $('#updated').text('Last updated on ' + str);
 
 });
