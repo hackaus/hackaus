@@ -92,7 +92,7 @@ $(document).ready(function() {
     $('#chatBox').fadeIn(1000);
   });
 
-  $("#close").on("click", function() {
+  $(".close").on("click", function() {
     $('#chatBox').fadeOut(500);
     $('#chat').fadeIn(1000);
   });

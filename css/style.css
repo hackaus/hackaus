@@ -449,6 +449,14 @@ footer.second {
 .footer-subscribe {
 	margin: 0 auto;
 	width: 70%;
+
+}
+
+/* mailchimp subscription */
+
+#mc_embed_signup {
+	clear:left;
+	font:14px Helvetica,Arial,sans-serif;
 }
 
 /* //////////////////// map ////////////////////// */
@@ -544,7 +552,7 @@ footer.second {
 	right:15px;
 }
 
-#close {
+#top-close {
 	position: absolute;
 	width: 336px;
 	height: 35px;
@@ -557,6 +565,8 @@ footer.second {
 	font-size: 27px;
 	background: rgb(169, 169, 169);
 }
+
+
 
 #exit {
 	position:fixed;
@@ -745,7 +755,7 @@ footer.second {
 	max-width: 400px;
 	/*margin: 20px auto;*/
 	/*padding: 10px 2px 5px 2px;*/
-	padding: 1em;
+	padding: 1em 1em 0;
 }
 .webform-inner-wrapper {
 	margin: 0 auto;
@@ -849,4 +859,70 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 	#chat {
 		display: none;
 	}
+}
+
+#mc_embed_signup {
+	/*background: #EDEDED;*/
+}
+#mc_embed_signup .mc-field-group {
+	padding-bottom: 0%;
+}
+#mc_embed_signup .mc-field-group label {
+}
+#mc-states {
+	display: inline-block;
+
+}
+
+#mc_embed_signup .mc-field-group select {
+	height: 22px;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+#mc_embed_signup label {
+	color: #959595;
+}
+
+#mc_embed_signup form {
+	padding: 1em 3em;
+}
+#mc_embed_signup input.email {
+	width: 100%;
+	padding: 0.8em
+}
+#mc_embed_signup input.button {
+	width: 100%;
+}
+.half-button {
+	width: 52%;
+	display: inline-block;
+}
+
+#bottom-close {
+	display: inline-block;
+	background: #DD4814;
+	text-align: center;
+	width: 41%;
+	padding: 8px;
+	color: #EDEDED;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-right: 6px;
+}
+
+#mc_embed_signup .button {
+	background-color: #DD4814;
+	height: 40px;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+	background-color: #EDEDED;
+}
+
+#bottom-subscribe {
+	width: 100%;
 }
