@@ -900,6 +900,7 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 .half-button {
 	width: 52%;
 	display: inline-block;
+	vertical-align: top;
 }
 
 #bottom-close {
