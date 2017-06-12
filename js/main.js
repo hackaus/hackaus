@@ -22,7 +22,7 @@ $(document).ready(function() {
 //////////////////////////////////////
 /////   current hackathoons   ///////
 ////////////////////////////////////
-  $("#NSW").addClass('active');
+  // $("#NSW").addClass('active');
   $( "#QLD" ).on("click", function() {
     $(this).addClass('active').siblings().removeClass('active');
     $('.bris').show().siblings().hide('bris');
