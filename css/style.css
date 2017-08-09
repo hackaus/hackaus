@@ -222,7 +222,7 @@ p {
 
 .clear-fix {
 	clear: both;
-	/*padding: 2%;*/
+	padding: 1%;
 }
 
 article {
@@ -310,6 +310,15 @@ span.about {
 	padding: 1em;
 	margin: 1em 0;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.online-wrapper {
+	background: white;
+	padding: 1em;
+	margin: 0 auto;
+	width: 600px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+
 }
 
 
@@ -497,6 +506,11 @@ footer.second {
 	padding-bottom: 2em;
 	width: 300px;
 	margin: 0 auto;
+}
+.online-info {
+	margin: 0 auto;
+	padding: 1em;
+	font-size: 14px;
 }
 .social-info p {
 	/*margin-left: 247px;*/
