@@ -7,7 +7,7 @@ if ( $jsonPOST ) {
   $obj = json_decode($jsonPOST);
   $branch = $obj->ref;
   if($branch == "refs/heads/master") {
-    shell_exec( "cd $dir && git reset --hard HEAD && git pull" );
+    shell_exec( "cd $dir && git fetch origin master && git reset --hard FETCH_HEAD" );
     echo '<p>Success<p>';
     file_put_contents($dir . 'github.log', $jsonPOST);
   }
