@@ -47,6 +47,10 @@ $(document).ready(function() {
     $(this).addClass('active').siblings().removeClass('active')
     $('.darwin').show().siblings().hide('darwin');
   });
+  $( "#ACT" ).on("click", function() {
+    $(this).addClass('active').siblings().removeClass('active')
+    $('.act').show().siblings().hide('act');
+  });
   $( "#TAS" ).on("click", function() {
     $(this).addClass('active').siblings().removeClass('active')
     $('.hobart').show().siblings().hide('hobart');

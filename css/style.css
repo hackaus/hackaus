@@ -525,7 +525,7 @@ footer.second {
   width: 40%;
 }
 
-.syd, .bris, .melb, .adel, .perth, .darwin, .hobart {
+.syd, .bris, .melb, .adel, .perth, .darwin, .hobart, .act {
   float: right;
   width: 100%;
   display: none;
