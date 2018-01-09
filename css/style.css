@@ -745,7 +745,7 @@ footer.second {
     width: 100%;
     padding: 13px 1.5em;
   }
-  .bris, .melb, .adel, .perth, .darwin, .hobart {
+  .bris, .melb, .adel, .perth, .darwin, .hobart, .act {
    display: none;
  }
  .social-wrapper {
