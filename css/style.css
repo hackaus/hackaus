@@ -306,10 +306,21 @@ span.about {
 }
 
 .upcoming-inner-wrapper {
+	position: relative;
 	background: white;
-	padding: 1em;
+	padding: 2em 1em;
 	margin: 1em 0;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.partner {
+	position: absolute;
+	width: 180px;
+	height: 35px;
+	right: -6px;
+	top: 6px;
+	background: #FFC400;
+	color: white;
 }
 
 .online-wrapper {
@@ -956,3 +967,5 @@ fieldset#em_wfs_formfield_3539140_fieldset span {
 #bottom-subscribe {
 	width: 100%;
 }
+
+
